@@ -4,12 +4,11 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-    public float radius { get; } = 3.0f;
-    public Color color = Color.yellow;
+    public virtual float radius { get; } = 3.0f;
+    public virtual Color color => Color.yellow;
 
-    //REMEBER if possible change so that the type is that interface
     [SerializeField]
-    private List<Response> responseObjects = new List<Response>();
+    protected virtual List<Response> responseObjects => new List<Response>();
 
     private void OnDrawGizmos()
     {
