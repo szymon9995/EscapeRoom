@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IResponse
+public abstract class Response : MonoBehaviour
 {
-    public void Response();
+    public abstract void Respond();
 }

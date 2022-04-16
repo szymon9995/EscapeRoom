@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestCubeClick : Interactable
+public class Interaction : Interactable
 {
     public override void OnEndHover()
     {

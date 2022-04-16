@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightResponse : MonoBehaviour, IResponse
+public class LightToggleResponse : Response
 {
-    public void Response()
+    public override void Respond()
     {
         Light light = GetComponent<Light>();
         light.enabled = !light.enabled;
