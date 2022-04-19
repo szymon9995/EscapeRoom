@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public abstract class Interactable : MonoBehaviour
 {
     public virtual float radius { get; } = 3.0f;
     public virtual Color color => Color.yellow;
 
     [SerializeField]
-    protected virtual List<Response> responseObjects => new List<Response>();
+    protected List<Response> responseObjects = new List<Response>();
+
+    public bool canInteract = true;
 
     private void OnDrawGizmos()
     {
@@ -26,3 +27,4 @@ public abstract class Interactable : MonoBehaviour
     public abstract void OnStartHover();
     public abstract void OnEndHover();
 }
+

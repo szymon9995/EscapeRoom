@@ -7,7 +7,7 @@ public class InteractionSelfResponse : Interactable
 
     public override Color color => Color.red;
 
-    protected override List<Response> responseObjects => null;
+    //REMEBER list is unused, need way to hide it in inspector 
 
     public override void OnEndHover()
     {

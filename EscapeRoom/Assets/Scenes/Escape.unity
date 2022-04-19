@@ -535,6 +535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0868898815d442a2c817e73295bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  responseObjects: []
+  canInteract: 1
 --- !u!1 &358765854
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +834,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94c635804841d6f419ed1d8ff0b7d9e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  responseObjects:
+  - {fileID: 1749374054}
+  canInteract: 1
 --- !u!1 &621725705
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,6 +963,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0868898815d442a2c817e73295bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  responseObjects: []
+  canInteract: 1
 --- !u!1 &690560543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1069,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 706935470}
+  - component: {fileID: 706935471}
   m_Layer: 0
   m_Name: TestText
   m_TagString: Untagged
@@ -1094,6 +1102,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &706935471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706935469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7d35263f2396c45b27a2660f492d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &715071956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,6 +1238,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0868898815d442a2c817e73295bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  responseObjects: []
+  canInteract: 1
 --- !u!1 &754908122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,6 +1366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0868898815d442a2c817e73295bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  responseObjects: []
+  canInteract: 1
 --- !u!1 &758481601
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,6 +1494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0868898815d442a2c817e73295bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  responseObjects: []
+  canInteract: 1
 --- !u!1 &798200836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,6 +1699,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ff333cbd4d721489fafb4a6ce3b663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  responseObjects:
+  - {fileID: 1133358419}
+  canInteract: 1
 --- !u!1 &896970086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,6 +1828,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0868898815d442a2c817e73295bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  responseObjects: []
+  canInteract: 1
 --- !u!1 &944137920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,6 +2157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0868898815d442a2c817e73295bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  responseObjects: []
+  canInteract: 1
 --- !u!1 &1150672265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2282,6 +2315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0868898815d442a2c817e73295bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  responseObjects: []
+  canInteract: 1
 --- !u!1 &1201751274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,6 +2843,8 @@ GameObject:
   - component: {fileID: 1646264640}
   - component: {fileID: 1646264642}
   - component: {fileID: 1646264641}
+  - component: {fileID: 1646264644}
+  - component: {fileID: 1646264643}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -2892,6 +2929,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1646264643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646264639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 568840d7059224e48a5682c4e55327f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &1646264644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646264639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44feaa8bb6398704f9a7d7177ca5d7fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  responseObjects:
+  - {fileID: 706935471}
+  - {fileID: 1646264643}
+  m_TextMesh: {fileID: 1646264641}
+  text: 1234
 --- !u!1 &1749374051
 GameObject:
   m_ObjectHideFlags: 0
@@ -3178,6 +3245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0868898815d442a2c817e73295bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  responseObjects: []
+  canInteract: 1
 --- !u!1 &2052508355
 GameObject:
   m_ObjectHideFlags: 0
@@ -3304,6 +3373,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f0868898815d442a2c817e73295bfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  responseObjects: []
+  canInteract: 1
 --- !u!1 &2058557507
 GameObject:
   m_ObjectHideFlags: 0

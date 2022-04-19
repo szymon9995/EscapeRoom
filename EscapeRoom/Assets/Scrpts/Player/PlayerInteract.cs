@@ -45,7 +45,7 @@ public class PlayerInteract : MonoBehaviour
             Interactable target = hit.collider.GetComponent<Interactable>();
             if(target!=null)
             {
-                if(hit.distance <= target.radius)
+                if(hit.distance <= target.radius && target.canInteract)
                 {
                     if (target == curTarget)
                     {
