@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayAnimationResponse : Response
 {
-    [SerializeField]
-    private string animat = "";
+    public string animat = "";
 
     private Animator animator = null;
     private void Start()
