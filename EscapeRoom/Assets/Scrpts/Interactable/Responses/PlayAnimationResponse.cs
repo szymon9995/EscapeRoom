@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class PlayAnimationResponse : Response
 {
-    public string animat = "";
+    [SerializeField]
+    private string animat = "";
 
     private Animator animator = null;
+
+    [SerializeField]
+    private List<string> nextAnim = new List<string>();
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -16,6 +20,13 @@ public class PlayAnimationResponse : Response
         if (animator != null)
         {
             animator.Play(animat);
+
+            if(nextAnim.Count > 0)
+            {
+                animat = nextAnim[0];
+                nextAnim.RemoveAt(0);
+                nextAnim.Add(animat);
+            }
         }
     }
 }

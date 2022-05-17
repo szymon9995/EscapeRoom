@@ -11,10 +11,16 @@ public abstract class Interactable : MonoBehaviour
 
     public bool canInteract = true;
 
+    [SerializeField]
+    private bool showGizmo = true;
+
     private void OnDrawGizmos()
     {
-        Gizmos.color = color;
-        Gizmos.DrawWireSphere(transform.position, radius);
+        if (showGizmo)
+        {
+            Gizmos.color = color;
+            Gizmos.DrawWireSphere(transform.position, radius);
+        }
     }
 
     public virtual void OnInteract()
