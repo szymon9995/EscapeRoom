@@ -12,6 +12,12 @@ public abstract class EventSend : MonoBehaviour
     private void Start()
     {
         Send.AddListener(EventResponde);
+        OnStart();
+    }
+
+    protected virtual void OnStart()
+    {
+
     }
 
     public virtual void EventResponde()

@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class OnCounterEquals : EventSend
 {
-    public Counter counter = new Counter();
+    public Counter counter;
 
     [SerializeField]
     private int count_equals;
     [SerializeField]
     private int count_begin_number;
 
-    private void Start()
+    protected override void OnStart()
     {
+        counter = new Counter();
         counter.Set(count_begin_number);
     }
     private void Update()
