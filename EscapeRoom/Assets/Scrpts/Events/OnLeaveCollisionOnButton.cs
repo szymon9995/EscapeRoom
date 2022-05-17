@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OnEnterCollisionOnButton : EventSendCountinous
+public class OnLeaveCollisionOnButton : EventSendCountinous
 {
     [SerializeField]
     private Rigidbody m_RigidBody = null;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionExit(Collision collision)
     {
-        if(m_RigidBody != null)
+        if (m_RigidBody != null)
         {
-            if(collision.rigidbody == m_RigidBody)
+            if (collision.rigidbody == m_RigidBody)
             {
                 Send?.Invoke();
             }
