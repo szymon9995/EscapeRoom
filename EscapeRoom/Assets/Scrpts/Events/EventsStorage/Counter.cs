@@ -19,4 +19,14 @@ public class Counter
     {
         Count = number;
     }
+
+    public void Add(int number)
+    {
+        Count += number;
+    }
+
+    public void Sub(int number)
+    {
+        Count -= number;
+    }
 }
