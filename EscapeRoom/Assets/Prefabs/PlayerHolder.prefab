@@ -436,6 +436,7 @@ MonoBehaviour:
   sensX: 400
   sensY: 400
   orientation: {fileID: 7395182226852479959}
+  cursorTexture: {fileID: 2800000, guid: 3d7dd404819ebd3468fe8d716e4a580c, type: 3}
 --- !u!1 &7659109341723096329
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,3 +574,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _light: {fileID: 1001446931262580286}
+  flashLight: {fileID: 0}

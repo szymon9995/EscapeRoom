@@ -11,6 +11,9 @@ public class PlayerRotation : MonoBehaviour
 
     private float rotationX;
     private float rotationY;
+
+    [SerializeField]
+    private Texture2D cursorTexture;
     void Start()
     {
         //Lock cursor to center of the screen for First Person View.
@@ -19,7 +22,8 @@ public class PlayerRotation : MonoBehaviour
         //REMEMBER Make curson have an incon later
 
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        if (cursorTexture != null)
+            Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.ForceSoftware);
     }
 
     void Update()
