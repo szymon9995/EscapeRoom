@@ -13,22 +13,12 @@ public class FlashLightToggle : MonoBehaviour
     [SerializeField]
     private ItemData flashLight;
 
-    private void Start()
-    {
-        invetory = GameObject.Find("Inventory").GetComponent<Inventory>();
-        if(invetory == null)
-        {
-            Debug.LogWarning("Could not find inventory");
-        }
-    }
+    public bool isActive = false;
     private void Update()
     {
-        if(invetory != null)
-        {
-            if (Input.GetKeyDown(key) && invetory.IsItem("FlashLight"))
+            if (Input.GetKeyDown(key) && isActive)
             {
                 _light.enabled = !_light.enabled;
             }
-        }
     }
 }
